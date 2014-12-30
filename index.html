@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gary's favorite quotes!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="css/codiqa.ext.min.css" rel="stylesheet">
+  <link href="css/jqm-neue.css" rel="stylesheet">
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/codiqa.ext.min.js"></script>
+  <script src="js/ancient-quotes.js"></script>
+  <script src="https://cdn.firebase.com/js/client/1.1.2/firebase.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" data-theme="d" id="page1"
+  style="background: url('img/82756857_savanna_08.jpg') no-repeat">
+      <div data-theme="a" data-role="header">
+          <h1 id="homeHeader">
+             Gary's FAV quotes
+          </h1>
+
+      </div>
+      <div data-role="content" style="padding: 0%" >
+          <a id="QuoteSpot"data-role="button" data-transition="slidedown" href="#page2">
+              Check it out!
+          </a>
+          <img src="img/AncientImage.jpg" alt="" id="Waterfall">
+          <img src="img/ZenGarden.jpg" alt="" id="Zen">
+          <hr style="height:3px; background-color:white; border:0; margin-top:12px; margin-bottom:12px;">
+      </div>
+  </div>
+  <div data-role="page" data-control-title="QuotePage" id="page2">
+      <div data-theme="a" data-role="header" data-position="fixed" >
+      
+          <h3>
+             Gary's quotes!
+          </h3>
+      </div>
+      <div data-role="content">
+      <p id="ancientArray"> 
+
+
+
+   
+
+      
+      </p>
+      
+      </div>
+         <button onclick="reload()">New Quote </button>
+  </div>
+</body>
+</html>
